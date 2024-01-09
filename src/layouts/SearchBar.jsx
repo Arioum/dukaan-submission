@@ -5,7 +5,7 @@ import SearchInput from '../components/SearchInput';
 
 const SearchBar = () => {
   return (
-    <header className='flex border-b-2 px-[32px] py-[16px] w-[calc(100vw-224px)] justify-between h-[64px]'>
+    <header className='flex border-b-2 px-[32px] py-[16px] w-[calc(100vw-224px)] justify-between h-[64px] items-center'>
       <div className='flex gap-[16px] items-center justify-between'>
         <h2 className='text-[15px] leading-[22px]'>Payments</h2>
         <span className='flex justify-center items-center justify-center text-[12px] leading-[16px] gap-[6px]'>
