@@ -1,5 +1,4 @@
 import { FiInfo } from 'react-icons/fi';
-import { BsCaretDownFill } from 'react-icons/bs';
 
 const TableHeader = () => {
   return (
@@ -7,9 +6,9 @@ const TableHeader = () => {
       <th className='flex grow font-[500]'>Order ID</th>
       <th className='flex grow font-[500] flex gap-[4px] items-center'>
         Order Date
-        <span>
-          <BsCaretDownFill />
-        </span>
+        <button className='w-[8px]'>
+          <img src='/caret-down.svg' alt='sort' className='w-[6.97px]' />
+        </button>
       </th>
       <th className='flex grow justify-end font-[500]'>Order amount</th>
       <th className='flex grow justify-end font-[500] gap-[4px] items-center'>

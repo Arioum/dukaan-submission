@@ -2,6 +2,7 @@ import { LuSearch } from 'react-icons/lu';
 import { FiDownload } from 'react-icons/fi';
 import TransactionTable from './TransactionTable';
 import SearchInput from '../components/SearchInput';
+import DropDown from '../components/DropDown';
 
 const Transaction = () => {
   return (
@@ -18,9 +19,14 @@ const Transaction = () => {
             }
           />
           <div className='flex gap-[12px]'>
-            <select className='border-[1px] border-[#D9D9D9] text-[16px] leading-[24px] outline-0 font-[400] text-[#4D4D4D] h-[36px] w-[79px] py-[6px] px-[12px] rounded-[4px]'>
-              <option value=''>Sort</option>
-            </select>
+            <DropDown
+              defaultText={'Sort'}
+              tailwindClasses={
+                'border-[1px] border-[#D9D9D9] text-[16px] leading-[24px] outline-0 font-[400] text-[#4D4D4D] h-[36px] w-[79px] py-[6px] px-[12px] rounded-[4px]'
+              }
+              iconCss={"w-[16px] h-[16px] absolute mx-[-26px] my-[12px]"}
+              imgUrl={'/sort.svg'}
+            />
             <button className='border-[1px] border-[#D9D9D9] bg-white h-[36px] rounded-[4px] w-[36px] flex justify-center items-center'>
               <FiDownload className='text-[20px]' />
             </button>
