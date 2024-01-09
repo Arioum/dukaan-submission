@@ -14,9 +14,13 @@ const TableHeader = () => {
       <th className='flex grow justify-end font-[500]'>Order amount</th>
       <th className='flex grow justify-end font-[500] gap-[4px] items-center'>
         Transaction fees
-        <span>
+        <button className='hover:cursor-pointer group'>
           <FiInfo />
-        </span>
+          <span class='group-hover:opacity-100 transition-opacity px-[8px] py-[4px] text-[12px] leading-[16px] text-[#fff] font-[400] rounded-[4px] w-[294px] h-[40px] absolute translate-y-[15px] translate-x-[-280px] opacity-0 bg-[#4D4D4D] text-left'>
+            Transaction fees are charged as a percentage of the order amount
+            according to your plan.
+          </span>
+        </button>
       </th>
     </tr>
   );
